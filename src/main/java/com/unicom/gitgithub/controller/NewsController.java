@@ -23,6 +23,7 @@ import java.util.List;
 @RequestMapping(value = "news")//增加一层父级路径 拦截
 public class NewsController {
 
+    //@GetMapping   @PostMapping   @PutMapping   @DeleteMapping  子注释  多用   @RequestMapping  为总注释
     @RequestMapping(value = "/getAll") //请求 指定方法
     public List getAll(){
         News news1=new News(1,"aaa","ccccc");
